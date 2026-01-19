@@ -1,0 +1,174 @@
+style.css/* Reset generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Inter', sans-serif; */
+    background-color: #ffffff; /* Sfondo totalmente bianco */
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Un po' più largo per desktop, ma flessibile */
+    padding: 0 20px;
+    padding-top: 15px;
+    min-height: 105vh;
+}
+
+/* Header Profilo */
+.profile-header {
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: -5px;
+} */
+
+
+/* Contenitore Link */
+.links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Spazio tra i bottoni */
+    width: 72%;
+}
+
+/* Stile Bottoni Arrotondati e Grigi */
+.btn-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5 !important;  /* Grigio chiaro tipico di Hellolink */
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 50px; /* Massimo arrotondamento (Pill-shape) */
+    /* font-size: 1.2rem; */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: #000 1px solid;
+    font-size: 17px;
+    height: 25px;
+}
+
+#btn-link-special {
+    font-family: 'Jost'  !important;
+    letter-spacing: -0.03em;
+}
+
+/* Effetto al passaggio del mouse */
+.btn-link:hover {
+    background-color: #f2f2f2 !important; /* Grigio leggermente più scuro */
+} 
+
+
+/* Effetto al click */
+.btn-link:active {
+    transform: scale(0.98);
+}
+
+/* Footer Social */
+.social-footer {
+    margin: auto;
+    padding-left: 70px;
+    /* display: flex; */
+    /* gap: 25px; */
+}
+
+.social-footer img {
+    display: block;
+    width: 78%; /* O la larghezza che preferisci */
+    height: auto;
+}
+
+.social-footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#locale{
+    font-family: 'Poppins', Times, serif;
+    /* font-family: 'Poppins'; */
+    font-weight: 400;
+    font-size: 28px;
+    /* letter-spacing: 0em; */
+    /* margin-bottom: 2px; */
+    padding-bottom: 7px;
+    margin-top: 13px;
+    margin-bottom: -5px;
+
+}
+
+.descrizione{
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0em;
+    color: black;
+    margin-top: 5px;
+    line-height: 1.5em;
+}
+
+.inner-logo{
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Bootini in alto a destra */
+.top-right-menu {
+    position: absolute;
+    top: 20px;
+    right: 320px;
+    display: flex;
+    gap: 3px; /* Spazio tra i puntini */
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Stile dei singoli puntini */
+/* Contenitore per i puntini */
+.top-menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Spinge i puntini a destra */
+    padding-top: 20px;
+    margin-bottom: -20px; /* Recupera spazio per non allontanare troppo il logo */
+    margin-left: 60px;
+}
+
+.three-dots {
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+    /* padding: 50px; */
+}
+
+.three-dots span {
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 50%;
+}
