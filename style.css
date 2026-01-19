@@ -156,7 +156,7 @@ body {
     justify-content: flex-end; /* Spinge i puntini a destra */
     padding-top: 20px;
     margin-bottom: -20px; /* Recupera spazio per non allontanare troppo il logo */
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 
 .three-dots {
